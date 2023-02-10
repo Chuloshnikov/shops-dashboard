@@ -34,3 +34,7 @@
   overflow: hidden;
   grid-template-columns: 11rem auto 20rem;
 }
+
+.AppWrapper {
+  margin: 4rem;
+}
