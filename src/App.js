@@ -1,9 +1,13 @@
+import React from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
 
 const App = () => {
   return (
       <div className="App">
-        hello
+        <div className="AppGlass">
+            <Sidebar/>
+        </div>
       </div>
   );
 }
