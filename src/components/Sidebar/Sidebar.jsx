@@ -2,6 +2,7 @@ import styled from "./Sidebar.module.css";
 import LogoImage from "../../assets/icons/logo.png";
 
 import { SidebarData } from "../../data/data";
+import { UilSignOutAlt } from "@iconscout/react-unicons";
 
 const Sidebar = () => {
     return (
@@ -22,6 +23,9 @@ const Sidebar = () => {
                 </div>
                     )}
                 )}
+                <div className={styled.menuItem}>
+                    <UilSignOutAlt/>
+                </div>
             </div>
         </div>
     )
