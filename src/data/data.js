@@ -42,7 +42,7 @@ import {
   ];
   
   // Analytics Cards Data
-  export const cardsData = [
+  export const CardsData = [
     {
       title: "Sales",
       color: {

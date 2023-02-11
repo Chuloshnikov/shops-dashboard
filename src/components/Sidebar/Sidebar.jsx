@@ -9,7 +9,7 @@ const Sidebar = () => {
     return (
         <div className={styled.sidebar}>
             {/* LOGO */}
-            <Link to="/" className={styled.logo}>
+            <Link to="https://github.com/Chuloshnikov" className={styled.logo}>
                 <img src={LogoImage} alt="logo"/>
                 <span>
                     <span>CH</span>Sh<span>o</span>ps
