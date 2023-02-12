@@ -21,12 +21,19 @@ function CompactCard({param}) {
     const Png = param.png;
 
     return (
-        <div className={styles.compactCard}>
+        <div className={styles.CompactCard}
+        style={{
+            background: param.color.backGround,
+            boxShadow: param.color.boxShadows
+
+        }}
+        >
             <div className={styles.radialBar}>
-                <CircularProgressbar
+                <CircularProgressbar 
                 params={param.barValue}
                 text={`${param.barValue} %`}
                 />
+                <span>{param.title}</span>
             </div>
             <div className={styles.detail}>
                 <Png/>
