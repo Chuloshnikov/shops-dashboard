@@ -62,7 +62,7 @@ const ExpandedCard = ({ param, expanded, setExpanded }) => {
             background: param.color.backGround,
             boxShadow: param.color.boxShadow
         }}
-        animate={{ x: [null, 100, 0], scale: [0, 1], }}
+        animate={{ scale: [0, 1], }}
     
         >
             <div 

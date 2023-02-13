@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from "./DashboardMain.module.css";
 import Cards from './Cards/Cards';
 import Table from '../Table/Table';
 
