@@ -1,0 +1,10 @@
+.RightSide {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: space-evenly;
+}
+
+.title {
+    margin: 0.7rem 0;
+}
