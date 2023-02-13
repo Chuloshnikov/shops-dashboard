@@ -7,6 +7,7 @@ import Orders from './components/Orders/Orders';
 import Customers from './components/Customers/Customers';
 import Analytics from './components/Analytics/Analytics';
 import Products from './components/Products/Products';
+import RightSide from './components/RightSide/RightSide';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
                   <Route path="/analytics" element={<Analytics />}/>
               </Routes>
             </mein>
+            <RightSide/>
         </div>
       </div>
   );
