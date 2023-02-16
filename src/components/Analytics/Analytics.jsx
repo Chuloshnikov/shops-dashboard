@@ -61,7 +61,8 @@ const Analytics = () => {
   
   return (
     <div className={styles.Analytics}>
-        <ReactApexChart options={data.options} series={data.series} type="bar" height={600} />
+        <h1>Analytics</h1>
+        <ReactApexChart options={data.options} series={data.series} type="bar" height={520} />
     </div>
   )
 }

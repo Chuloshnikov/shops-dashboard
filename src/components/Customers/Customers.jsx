@@ -1,9 +1,18 @@
 import React from 'react'
 
-const Customers = ({ obj }) => {
+import styles from './Customers.module.css';
+
+const Customers = (props) => {
+  console.log(props);
   return (
-    <li>
-      {obj}
+    <li className={styles.Customer}>
+      <div className={styles.photoContainer}>
+        <p>{props.id}</p>
+        <img src={props.avatar} alt="user avatar"/>
+      </div>
+      
+        <p>{props.first_name} {props.last_name}</p>
+        <p>{props.email}</p>
     </li>
   )
 }

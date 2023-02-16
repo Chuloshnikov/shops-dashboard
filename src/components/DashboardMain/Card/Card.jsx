@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import styles from "./Card.module.css";
 import CompactCard from './CompactCard';
 import ExpandedCard from './ExpandedCard';
 import { AnimateSharedLayout } from 'framer-motion';

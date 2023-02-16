@@ -1,0 +1,53 @@
+.CustomersContainer {
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin: 0.5rem 0;   
+}
+
+.CustomersContainer input {
+    background: linear-gradient(
+        106.37deg,
+          #ffe1bc 29.63%,
+          #ffcfd1 51.55%,
+          #f3c6f1 90.85%
+        );
+    margin: 1rem 2rem;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+
+
+}
+
+.CustomersContainer input:active {
+    border: none;
+    outline-style: none;
+
+}
+.CustomersContainer input:focus {
+    border: none;
+    outline-style: none;
+}
+
+.CustomersContainer:last-child {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.buttons {
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+.buttons svg {
+    color: #d2d2d2;
+    transition: all .3s ease 0s;
+}
+
+.buttons svg:hover {
+    color: #9a9898;
+}

@@ -40,7 +40,7 @@ const Orders = () => {
     <TableContainer component={Paper}
     style={{ boxShadow: '0px 13px 20px 0px #80808029', maxHeight: '550px' }}
     >
-      <Table sx={{ minWidth: 650, overflowX: 'scroll' }} aria-label="simple table">
+      <Table sx={{ minWidth: 60, overflowX: 'scroll' }} aria-label="simple table">
         <TableHead>
           <TableRow sx={{ p: '10px', fontWeight: 'bold'}}>
             <TableCell sx={{fontWeight: 700}}>Products</TableCell>
