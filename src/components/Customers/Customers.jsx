@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Customers = () => {
+const Customers = ({ obj }) => {
   return (
-    <div>Customers</div>
+    <li>
+      {obj}
+    </li>
   )
 }
 
