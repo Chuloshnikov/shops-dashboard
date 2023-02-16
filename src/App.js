@@ -8,22 +8,23 @@ import Customers from './components/Customers/Customers';
 import Analytics from './components/Analytics/Analytics';
 import Products from './components/Products/Products';
 import RightSide from './components/RightSide/RightSide';
+import CustomersContainer from './components/Customers/CustomersContainer';
 
 const App = () => {
   return (
       <div className="App">
         <div className="AppGlass">
             <Sidebar/>
-            <mein className='AppWrapper'>
+            <main className='AppWrapper'>
               <Routes>
               <Route path="/" element={<DashboardMain />}/>
                   <Route path="/dashboard" element={<DashboardMain />}/>
                   <Route path="/orders" element={<Orders />}/>
-                  <Route path="/customers" element={<Customers />}/>
+                  <Route path="/customers" element={<CustomersContainer />}/>
                   <Route path="/products" element={<Products />}/>
                   <Route path="/analytics" element={<Analytics />}/>
               </Routes>
-            </mein>
+            </main>
             <RightSide/>
         </div>
       </div>
