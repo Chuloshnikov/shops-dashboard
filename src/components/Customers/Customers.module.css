@@ -19,3 +19,17 @@
     justify-content: space-between;
     width:10%;
 }
+
+@media screen and (max-width:1200px) {
+    .photoContainer p {
+        display: none;
+    } 
+    .photoContainer img {
+        width: 34px;
+    height: 34px;
+    }
+
+    .Customer>p {
+        font-size: 12px;
+    }
+}

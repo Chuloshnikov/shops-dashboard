@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "./Cards.module.css";
 import { CardsData } from "../../../data/data";
-import styled from '@emotion/styled';
 import Card from '../Card/Card';
 
 const Cards = () => {
@@ -9,7 +8,7 @@ const Cards = () => {
     <div className={styles.cards}>
         {CardsData.map((card, id) => {
             return (
-                <div key={id} className={styled.cardContainer}>
+                <div key={id} className={styles.cardContainer}>
                     <Card
                         title={card.title}
                         color={card.color}
