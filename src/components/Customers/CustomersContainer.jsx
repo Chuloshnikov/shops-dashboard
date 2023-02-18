@@ -13,7 +13,7 @@ const CustomersContainer = () => {
   const [pages, setPages] = useState(1);
 
   useEffect(() => {
-    fetch(`https://reqres.in/api/users?page=${pages}`)
+    fetch(`https://reqres.in/api/users?page=1`)
     .then(res => res.json())
     .then(json => {
       setUsers(json.data);
@@ -24,7 +24,7 @@ const CustomersContainer = () => {
       alert("Error to get Users");
     })
     .finally(() => setLoading(false));
-  }, []);
+  }, [pages]);
 
   const onChangeSearchValue = (event) => {
     setSearchValue(event.target.value);

@@ -54,6 +54,21 @@ const Analytics = () => {
           }
         }
       },
+      
+      legend: {
+        markers: {
+          width: 12,
+          height: 12,
+          strokeWidth: 0,
+          strokeColor: '#fff',
+          fillColors: ['#BE70FA', '#FE919D', '#FFCA71'],
+          radius: 12,
+          customHTML: undefined,
+          onClick: undefined,
+          offsetX: 0,
+          offsetY: 0
+      },
+      }
     },
   
   

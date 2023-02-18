@@ -17,7 +17,7 @@ const App = () => {
             <Sidebar/>
             <main className='AppWrapper'>
               <Routes>
-              <Route path="/" element={<DashboardMain />}/>
+                  <Route path="/" element={<DashboardMain />}/>
                   <Route path="/dashboard" element={<DashboardMain />}/>
                   <Route path="/orders" element={<Orders />}/>
                   <Route path="/customers" element={<CustomersContainer />}/>
