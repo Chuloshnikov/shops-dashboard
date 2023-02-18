@@ -1,0 +1,37 @@
+.ProductsContainer {
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    margin: 0.5rem 0;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 10px;
+    max-height: 500px;
+    overflow: scroll;
+    
+}
+
+.item {
+    background: linear-gradient(
+        106.37deg,
+          #ffe1bc 29.63%,
+          #ffcfd1 51.55%,
+          #f3c6f1 90.85%
+        );
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: all .3s ease 0s;
+}
+
+.item img {
+    width: 16rem;
+    height: 12rem;
+}
+
+.item:hover {
+    transform: scale(1.03);
+}

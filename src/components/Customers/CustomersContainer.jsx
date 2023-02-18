@@ -10,7 +10,8 @@ const CustomersContainer = () => {
   const [users, setUsers] = useState([]);
   const [isLoading, setLoading] = useState([true]);
   const [searchValue, setSearchValue] = useState('');
-  const [pages, setPages] = useState(1);
+
+ 
 
   useEffect(() => {
     fetch(`https://reqres.in/api/users?page=1`)
@@ -24,19 +25,13 @@ const CustomersContainer = () => {
       alert("Error to get Users");
     })
     .finally(() => setLoading(false));
-  }, [pages]);
+  }, []);
 
   const onChangeSearchValue = (event) => {
     setSearchValue(event.target.value);
   }
 
-  const changeUserPage = () => {
-    if (pages === 1) {
-      setPages(pages = pages + 1);
-    } else if (pages === 2) {
-      setPages(pages = pages - 1)
-    }
-  }
+
   
 
     return (
@@ -61,8 +56,8 @@ const CustomersContainer = () => {
         }
           </ul>
           <div className={styles.buttons}>
-          <BsFillCaretLeftFill  onClick={changeUserPage()}/>
-          <BsFillCaretRightFill onClick={changeUserPage()}/>
+          <BsFillCaretLeftFill />
+          <BsFillCaretRightFill />
           </div>
         </div>
     </>
