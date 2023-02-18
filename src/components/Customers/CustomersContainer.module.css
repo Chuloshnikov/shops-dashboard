@@ -51,3 +51,9 @@
 .buttons svg:hover {
     color: #9a9898;
 }
+
+@media screen and (max-width:600px) {
+    .CustomersContainer input {
+        width: 75%;
+    }
+}

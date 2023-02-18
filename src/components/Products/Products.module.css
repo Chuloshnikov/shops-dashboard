@@ -4,12 +4,25 @@
     margin: 0.5rem 0;  
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     padding: 1rem;
     gap: 10px;
     max-height: 500px;
     overflow-y: scroll;
     
+}
+
+
+@media screen and (max-width:1200px) {
+    .ProductsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .ProductsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .item {
@@ -35,3 +48,28 @@
 .item:hover {
     transform: scale(1.03);
 }
+
+
+@media screen and (max-width:1200px) {
+    .item img {
+        width: 12rem;
+        height: 9rem;
+    }
+}
+
+.buttonContainer {
+    margin: 0.5rem;
+} 
+
+.buttonContainer button {
+    background: var(--pink);
+    border-radius: 0.2rem;
+    border: 0;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+}
+
+.buttonContainer button:hover {
+    transform: scale(1.1);
+}
+
